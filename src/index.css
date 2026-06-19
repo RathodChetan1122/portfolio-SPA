@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bgBase text-textMain font-body antialiased selection:bg-brandRed selection:text-white overflow-x-hidden;
+  }
+  
+  html {
+    @apply scroll-smooth scroll-pt-24;
+  }
+  
+  body::after {
+    content: '';
+    @apply fixed inset-0 pointer-events-none opacity-[0.03] z-[9999];
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Custom styling for standard global overrides */
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-track { @apply bg-bgBase; }
+  ::-webkit-scrollbar-thumb { @apply bg-brandRed/40 rounded-sm; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-brandRed; }
+}
+
+@layer utilities {
+  .text-gradient-red {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brandRed to-orange-500;
+  }
+  .text-gradient-blue {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500;
+  }
+  .glass-card {
+    @apply bg-bgSurface/70 border border-white/[0.06] backdrop-blur-md;
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "cleanUrls": true,
+  "regions": ["bom1"],
+  "trailingSlash": false,
+  "framework": null,
+  "buildCommand": null,
+  "outputDirectory": null
+}
