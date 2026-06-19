@@ -48,7 +48,7 @@ export const projectsData = [
     description: 'Comprehensive charity event platform designed to host tournament details, calculate multi-tiered corporate sponsorship models, accept public tracking parameters, and optimize donations.',
     technologies: ['React.js', 'JavaScript', 'Bootstrap', 'REST APIs', 'Responsive Design'],
     githubUrl: 'https://github.com/RathodChetan1122/golf-charity',
-    liveUrl: 'https://golf-charity.vercel.app',
+    liveUrl: 'https://golf-charity-plum.vercel.app/',
     featured: false,
     metrics: [
       { value: 'End-to-End', label: 'Event Management' },
